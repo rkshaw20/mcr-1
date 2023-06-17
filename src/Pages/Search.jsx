@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ProductCard from "../Components/ProductCard";
 import { products } from "../products";
+import { Link } from "react-router-dom";
 
 const Search = () => {
   const [search, setSearch] = useState('');
@@ -14,9 +15,10 @@ const Search = () => {
 
  
 
-
+  
   return (
     <div className="search-page">
+      <Link to='/'>Home</Link>
       <div className="search-input">
         <input
           type="search"

@@ -32,11 +32,51 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+/* 
 .card {
   padding: 2em;
 }
 
 .read-the-docs {
   color: #888;
+} */
+
+.home-page{
+  border: 2px solid blue;
+}
+
+.product-list{
+ display: flex;
+ flex-direction: column;
+
+
+}
+.currently-reading, .want-to-read, .read{
+  display: flex;
+  justify-content: space-around;
+}
+/* .product-card */
+.product-card{
+  border: 2px solid red;
+  /* height: 22rem; */
+  width: 10rem;
+  padding: .5rem;
+}
+
+.card-img{
+  width: 10rem;
+  height: 15rem;
+  object-fit: contain;
+}
+
+
+/* search-page */
+
+.search-page-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  place-items: center;
+
 }

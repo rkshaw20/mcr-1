@@ -42,7 +42,7 @@
 } */
 
 .home-page{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 }
 
 .product-list{
@@ -57,7 +57,7 @@
 }
 /* .product-card */
 .product-card{
-  border: 2px solid red;
+  border: 2px solid rgb(251, 255, 0);
   /* height: 22rem; */
   width: 10rem;
   padding: .5rem;

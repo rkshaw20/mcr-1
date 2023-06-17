@@ -12,9 +12,10 @@ const dataReducer = (state, action) => {
         const { id, shelf } = action.payload;
         const updatedProducts = state.products.map((product) => {
           if (product.id === id) {
-            return { ...product, shelf };
+            return { ...product, shelf:shelf };
+          }else{
+            return product;
           }
-          return product;
         });
         return { ...state, products: updatedProducts };
 

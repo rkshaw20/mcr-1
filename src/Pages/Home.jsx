@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import ProductCard from "../Components/ProductCard";
-import { products } from "../products";
+// import { products } from "../products";
+import { useDataContext } from "../DataContextProvider";
 
 const Home = () => {
-  console.log(products);
-
+  const {products} =useDataContext()
   const currentlyReading = products.filter(
     ({ shelf }) => shelf === "currently reading"
   );
@@ -15,7 +15,7 @@ const Home = () => {
     <div className="home-page">
       <div className="navbar">
         <div className="header">Books</div>
-         <Link to="/search">Search Books</Link> 
+         <Link to="/search">Search Page</Link> 
       </div>
       <div className="product-list">
         <div className="product-container">

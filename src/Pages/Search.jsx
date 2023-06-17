@@ -1,9 +1,10 @@
 import { useState } from "react";
 import ProductCard from "../Components/ProductCard";
-import { products } from "../products";
 import { Link } from "react-router-dom";
+import { useDataContext } from "../DataContextProvider";
 
 const Search = () => {
+  const {products}=useDataContext();
   const [search, setSearch] = useState('');
   const [filtered, setFiltered]=useState({})
 
